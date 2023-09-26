@@ -7,107 +7,104 @@
 
 
 
-## ============================= Lista =========================
+// ============================= Lista =========================
 
-// make lista
-/**
- *
- * @param vetor
- * @param tamanho
- * @return
- */
-int criar_lista(int *vetor, int tamanho);
+//// make lista
+///**
+// *
+// * @param vetor
+// * @param tamanho
+// * @return
+// */
+//int criar_lista(int *vetor, int tamanho);
+//
+////destruir lista
+///**
+// *
+// * @param vetor
+// * @return
+// */
+//int destruir(int *vetor, int tamanho);
+//
+//// insere na lista linear
+///**
+// *
+// * @param vetor
+// * @param total
+// * @param tamanho_vetor
+// * @param elemeto
+// * @return
+// */
+//int inserir_l(int *vetor, int *total, int tamanho, int elemeto);
+//
+//// insere na lista ordenada
+///**
+// *
+// * @param vetor
+// * @param total
+// * @param tamanho_vetor
+// * @param elemeto
+// * @return
+// */
+//int inserir_o(int *vetor, int *total, int tamanho, int elemeto);
+//
+//// remover da lista linear
+///**
+// *
+// * @param vetor
+// * @param total
+// * @param elemeto
+// * @return
+// */
+//int remover_l(int *vetor, int *total, int elemeto);
+//
+//// remover da lista ordenada
+///**
+// *
+// * @param vetor
+// * @param total
+// * @param elemeto
+// * @return
+// */
+//int remover_o(int *vetor, int *total, int elemeto);
+//
+//// buscar linear
+///**
+// *
+// * @param vetor
+// * @param elemeto
+// * @return
+// */
+//int busca_l(int *vetor, int total, int tamanho, int elemeto);
+//
+///**
+// * buscar binária de inteiros
+// * @param vetor a buscar no elemento
+// * @param elemeto a ser buscado
+// * @return -1 if não encontrar e 1 se encontrar
+// */
+//int busca_bin_int(int *vetor, int total, int tamanho, int elemeto);
+//
+//// busca binaria recursiva
+///**
+// *
+// * @param vetor
+// * @param elemeto
+// * @return
+// */
+//int busca_bin_rec(int *vetor, int total, int tamanho, int elemeto);
 
-//destruir lista
-/**
- *
- * @param vetor
- * @return
- */
-int destruir(int *vetor, int tamanho);
-
-// insere na lista linear
-/**
- *
- * @param vetor
- * @param total
- * @param tamanho_vetor
- * @param elemeto
- * @return
- */
-int inserir_l(int *vetor, int *total, int tamanho, int elemeto);
-
-// insere na lista ordenada
-/**
- *
- * @param vetor
- * @param total
- * @param tamanho_vetor
- * @param elemeto
- * @return
- */
-int inserir_o(int *vetor, int *total, int tamanho, int elemeto);
-
-// remover da lista linear
-/**
- *
- * @param vetor
- * @param total
- * @param elemeto
- * @return
- */
-int remover_l(int *vetor, int *total, int elemeto);
-
-// remover da lista ordenada
-/**
- *
- * @param vetor
- * @param total
- * @param elemeto
- * @return
- */
-int remover_o(int *vetor, int *total, int elemeto);
-
-// buscar linear
-/**
- *
- * @param vetor
- * @param elemeto
- * @return
- */
-int busca_l(int *vetor, int total, int tamanho, int elemeto);
-
-/**
- * buscar binária de inteiros
- * @param vetor a buscar no elemento
- * @param elemeto a ser buscado
- * @return -1 if não encontrar e 1 se encontrar
- */
-int busca_bin_int(int *vetor, int total, int tamanho, int elemeto);
-
-// busca binaria recursiva
-/**
- *
- * @param vetor
- * @param elemeto
- * @return
- */
-int busca_bin_rec(int *vetor, int total, int tamanho, int elemeto);
 
 
+// ======================== Fila ====================
 
-## ======================== Fila ====================
+
 
 typedef struct
 {
     int *vetor;
     int tamanho;
-    int total_elementos;
-}vetor_t;
-
-typedef struct
-{
-    vetor_t *fila;
+    int total;
     int inicio;
     int fim;
 }fila_t;
@@ -116,20 +113,26 @@ typedef struct
 // enfileirar <- Adiciona um elemento no final da fila
 int enqueue(fila_t *fila, int elemento);
 
+
 // desenfileirar <- Remove o elemento que está no ínicio da fila
 int dequeue(fila_t *fila);
+
 
 // ínicio <- Retorna o elemento que está no ínicio da fila
 int head(fila_t *fila);
 
+
 // fim <- Retorna o elemento que está no final da fila
 int tail(fila_t *fila);
+
 
 // tamanho <- Retorna o total de elementos na fila
 int size(fila_t *fila);
 
+
 // vazia <- Indica se a fila está vazia ou não
 int empty(fila_t *fila);
+
 
 // Cheia <- Indica se a fila está cheia ou não
 int full(fila_t *fila);
@@ -137,7 +140,7 @@ int full(fila_t *fila);
 
 
 
-## ============================= Stack ===================================
+// ============================= Stack ===================================
 
 typedef struct
 {
@@ -148,17 +151,25 @@ typedef struct
     int end;
 }stack;
 
-// Adiciona elemento no topo da pilha
+
+// Criar Pila
+int criar_Pilha(stack *St_p);
+
+// Ad
+// iciona elemento no topo da pilha
 int push(stack *St_p, int elemento);
+
 
 // Remove elemento no topo da pilha
 int pop(stack *St_p);
 
+
 // Retorna total de elemento na pilha
-int size(stack *St_p);
+int size_pilha(stack *St_p);
+
 
 // Retorna se a pilha está vazia ou não
-int empty(stack *St_p);
+int empty_pilha(stack *St_p);
 
 
 
