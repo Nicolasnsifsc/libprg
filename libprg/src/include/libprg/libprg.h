@@ -9,90 +9,123 @@
 
 // ============================= Lista =========================
 
-// make lista
-/**
- *
- * @param vetor
- * @param tamanho
- * @return
- */
-int criar_lista(int *vetor, int tamanho);
+//// make lista
+///**
+// *
+// * @param vetor
+// * @param tamanho
+// * @return
+// */
+//int criar_lista(int *vetor, int tamanho);
+//
+////destruir lista
+///**
+// *
+// * @param vetor
+// * @return
+// */
+//int destruir(int *vetor, int tamanho);
+//
+//// insere na lista linear
+///**
+// *
+// * @param vetor
+// * @param total
+// * @param tamanho_vetor
+// * @param elemeto
+// * @return
+// */
+//int inserir_l(int *vetor, int *total, int tamanho, int elemeto);
+//
+//// insere na lista ordenada
+///**
+// *
+// * @param vetor
+// * @param total
+// * @param tamanho_vetor
+// * @param elemeto
+// * @return
+// */
+//int inserir_o(int *vetor, int *total, int tamanho, int elemeto);
+//
+//// remover da lista linear
+///**
+// *
+// * @param vetor
+// * @param total
+// * @param elemeto
+// * @return
+// */
+//int remover_l(int *vetor, int *total, int elemeto);
+//
+//// remover da lista ordenada
+///**
+// *
+// * @param vetor
+// * @param total
+// * @param elemeto
+// * @return
+// */
+//int remover_o(int *vetor, int *total, int elemeto);
+//
+//// buscar linear
+///**
+// *
+// * @param vetor
+// * @param elemeto
+// * @return
+// */
+//int busca_l(int *vetor, int total, int tamanho, int elemeto);
+//
+///**
+// * buscar binária de inteiros
+// * @param vetor a buscar no elemento
+// * @param elemeto a ser buscado
+// * @return -1 if não encontrar e 1 se encontrar
+// */
+//int busca_bin_int(int *vetor, int total, int tamanho, int elemeto);
+//
+//// busca binaria recursiva
+///**
+// *
+// * @param vetor
+// * @param elemeto
+// * @return
+// */
+//int busca_bin_rec(int *vetor, int total, int tamanho, int elemeto);
 
-//destruir lista
-/**
- *
- * @param vetor
- * @return
- */
-int destruir(int *vetor, int tamanho);
+//Irá criar um vetor povoado com número aleatórios que o usuário irá escolher
+int criar(int *vetor,int tamanho);
 
-// insere na lista linear
-/**
- *
- * @param vetor
- * @param total
- * @param tamanho_vetor
- * @param elemeto
- * @return
- */
-int inserir_l(int *vetor, int *total, int tamanho, int elemeto);
+//Irá povoar o vetor criado se for não ordenado
+int povoar_nao_ord(int *vetor,int *total,int tamanho);
 
-// insere na lista ordenada
-/**
- *
- * @param vetor
- * @param total
- * @param tamanho_vetor
- * @param elemeto
- * @return
- */
-int inserir_o(int *vetor, int *total, int tamanho, int elemeto);
+//Irá povoar o vetor criado se for ordenado
+int povoar_ord(int *vetor,int *total,int tamanho);
 
-// remover da lista linear
-/**
- *
- * @param vetor
- * @param total
- * @param elemeto
- * @return
- */
-int remover_l(int *vetor, int *total, int elemeto);
+//Irá inserir número em uma lista ordenada
+int insere_ord(int *vetor,int *total,int tamanho,int elemento);
 
-// remover da lista ordenada
-/**
- *
- * @param vetor
- * @param total
- * @param elemeto
- * @return
- */
-int remover_o(int *vetor, int *total, int elemeto);
+//Irá inserir um número em uma lista não ordenada
+int insere_nao_ord(int *vetor,int *total,int tamanho,int elemento);
 
-// buscar linear
-/**
- *
- * @param vetor
- * @param elemeto
- * @return
- */
-int busca_l(int *vetor, int total, int tamanho, int elemeto);
+//Irá remover um número de uma lista ordenada
+int remove_num_ord(int *vetor,int *total,int tamanho,int elemento);
 
-/**
- * buscar binária de inteiros
- * @param vetor a buscar no elemento
- * @param elemeto a ser buscado
- * @return -1 if não encontrar e 1 se encontrar
- */
-int busca_bin_int(int *vetor, int total, int tamanho, int elemeto);
+//Irá remover um número de uma lista não ordenada
+int remove_num_nao_ord(int *vetor,int *total,int tamanho,int elemento);
 
-// busca binaria recursiva
-/**
- *
- * @param vetor
- * @param elemeto
- * @return
- */
-int busca_bin_rec(int *vetor, int total, int tamanho, int elemeto);
+//Irá fazer uma busca linear pelo vetor
+int busca_linear(int *vetor,int total,int tamanho, int elemento);
+
+//Irá fazer uma busca binaria de forma interativa pelo vetor
+int busca_bin_int(int *vetor,int total,int elemento);
+
+//Irá fazer uma busca binaria de forma recursiva pelo vetor
+int busca_bin_rec(int *vetor,int inicio,int fim, int elemento);
+
+//Irá liberar a memório alocado pelo vetor
+int libera_memoria(int *vetor,int tamanho);
 
 
 
