@@ -9,9 +9,6 @@ int criar_Pilha(stack *St_p)
 
 }
 
-
-
-
 int push(stack *St_p, int elemento)
 {
 

@@ -9,7 +9,7 @@ int enqueue(fila_t *fila , int elemento){
     }
 
     fila->vetor[fila->fim] = elemento;
-    fila->fim = (fila->fim + 1)% fila ->tamanho;
+    fila->fim = (fila->fim + 1)% fila->tamanho;
     fila->total++;
 
     return 0;
