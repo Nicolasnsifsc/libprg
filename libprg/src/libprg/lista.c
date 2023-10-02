@@ -5,7 +5,6 @@
 
 int criar_lista(int *vetor,int tamanho)
 {
-    //Verificr memória
     vetor = (int*) calloc(tamanho,sizeof (int));
     return 0;
 }

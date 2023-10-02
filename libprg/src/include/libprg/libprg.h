@@ -204,7 +204,24 @@ int size_pilha(stack *St_p);
 // Retorna se a pilha está vazia ou não
 int empty_pilha(stack *St_p);
 
+// =================== Lista Encadeada ===================
 
+typedef struct{
+     int dados;
+     struct no_t *proximo;
+} no_t;
+
+// criar uma lista
+no_t∗ criar(int dado);
+
+// buscar por dados
+bool buscar(no_t∗ inicio, int dado);
+
+// inserir novo nó
+no_t∗ inserir(no_t∗ inicio, int dado);
+
+// excluir toda lista
+void destruir(no_t∗ inicio);
 
 
 
