@@ -9,6 +9,9 @@ set(SOURCES
        "${CMAKE_CURRENT_LIST_DIR}/src/libprg/lista.c"
         "${CMAKE_CURRENT_LIST_DIR}/src/libprg/fila.c"
         "${CMAKE_CURRENT_LIST_DIR}/src/libprg/pilha.c"
+        src/libprg/bolha.c
+        src/libprg/inserion_sort.c
+        src/libprg/Selection_sort.c
 )
 
 add_library(libprg
