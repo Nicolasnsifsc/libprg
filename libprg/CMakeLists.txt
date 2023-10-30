@@ -12,6 +12,7 @@ set(SOURCES
         src/libprg/bolha.c
         src/libprg/inserion_sort.c
         src/libprg/Selection_sort.c
+        src/libprg/Merge_sort.c
 )
 
 add_library(libprg
