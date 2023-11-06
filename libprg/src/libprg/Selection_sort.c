@@ -1,7 +1,7 @@
 //
 // Created by aluno on 23/10/23.
 //
-#include <stdio.h>
+#include <libprg/libprg.h>
 
 int main(void)
 {

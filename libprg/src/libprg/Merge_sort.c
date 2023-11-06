@@ -1,7 +1,7 @@
 //
 // Created by aluno on 30/10/23.
 //
-#include <stdio.h>
+#include <libprg/libprg.h>
 
 // Em C esquerda começa com 0 e direita com n − 1
 int merge_sort(int *vetor[10], int esquerda, int direita)

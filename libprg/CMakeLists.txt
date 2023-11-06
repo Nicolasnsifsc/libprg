@@ -9,10 +9,12 @@ set(SOURCES
        "${CMAKE_CURRENT_LIST_DIR}/src/libprg/lista.c"
         "${CMAKE_CURRENT_LIST_DIR}/src/libprg/fila.c"
         "${CMAKE_CURRENT_LIST_DIR}/src/libprg/pilha.c"
-        src/libprg/bolha.c
-        src/libprg/inserion_sort.c
-        src/libprg/Selection_sort.c
-        src/libprg/Merge_sort.c
+        "${CMAKE_CURRENT_LIST_DIR}/src/libprg/bolha.c"
+        "${CMAKE_CURRENT_LIST_DIR}/src/libprg/inserion_sort.c"
+        "${CMAKE_CURRENT_LIST_DIR}/src/libprg/Selection_sort.c"
+        "${CMAKE_CURRENT_LIST_DIR}/src/libprg/Merge_sort.c"
+        "${CMAKE_CURRENT_LIST_DIR}/src/libprg/tomadaTempo.c"
+        "${CMAKE_CURRENT_LIST_DIR}src/libprg/ArquivoGrandE.c"
 )
 
 add_library(libprg

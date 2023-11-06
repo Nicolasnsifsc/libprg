@@ -4,6 +4,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
+#include <stdbool.h>
+#include <sys/time.h>
+#include <stdint.h>
+#include <stdio.h>
 
 
 
@@ -222,6 +226,18 @@ no_t∗ inserir(no_t∗ inicio, int dado);
 
 // excluir toda lista
 void destruir(no_t∗ inicio);
+
+
+// ================== Tomada de Tempo ======================
+
+
+void inicio_relogio_parede(struct timeval *inicio);
+double fim_relogio_parede(struct timeval *inicio);
+void relogio_CPU();
+
+
+
+
 
 
 
