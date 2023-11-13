@@ -1,6 +1,3 @@
-//
-// Created by aluno on 06/11/23.
-//
 #include <libprg/libprg.h>
 
 void inicio(struct timeval *inicio)
